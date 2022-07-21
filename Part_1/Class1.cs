@@ -8,10 +8,10 @@ namespace Part_1
 {
     class Ugoll
     {
-        double graduS;
-        double minutE;
-        double seconD;
-        public double Gradus
+        int graduS;
+        int minutE;
+        int seconD;
+        public int Gradus
         {
             get
             {
@@ -29,7 +29,7 @@ namespace Part_1
                 }
             }
         }
-        public double Minute
+        public int Minute
         {
             get
             {
@@ -37,11 +37,11 @@ namespace Part_1
             }
             set
             {
-                graduS += Math.Truncate(value / 60);
+                graduS += value / 60;
                 minutE = value % 60;
             }
         }
-        public double Second
+        public int Second
         {
             get
             {
@@ -49,11 +49,11 @@ namespace Part_1
             }
             set
             {
-                minutE += Math.Truncate(value / 60);
+                minutE += value / 60;
                 seconD = value % 60;
             }
         }
-        public Ugoll(double graduS, double minutE, double seconD)
+        public Ugoll(int graduS, int minutE, int seconD)
         {
             this.Gradus = graduS;
             this.Minute = minutE;

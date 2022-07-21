@@ -15,11 +15,11 @@ namespace Part_1
         {
             Console.WriteLine("Введите значение угла");
             Console.WriteLine("Градусы");
-            double gradus = Convert.ToDouble(Console.ReadLine());
+            int gradus = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Минуты");
-            double minute = Convert.ToDouble(Console.ReadLine());
+            int minute = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Секунды");
-            double second = Convert.ToDouble(Console.ReadLine());
+            int second = Convert.ToInt32(Console.ReadLine());
             Ugoll ugoll = new Ugoll(gradus, minute, second);
             double gradusRadian = ugoll.ToRadians();
             Console.WriteLine("Значение угла в радианах = {0:0.0000}", gradusRadian);
@@ -28,3 +28,4 @@ namespace Part_1
 
     }
 }
+
